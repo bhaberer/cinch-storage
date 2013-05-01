@@ -1,8 +1,8 @@
 # Cinch::Storage
 
-Simle YAML backed Storage solution for Cinch plugins.
+Simple YAML backed Storage solution for Cinch plugins.
 
-Warning: Once Cinch's author finishes Cinch::Storage I will depricate this gem.
+Warning: Once Cinch's author finishes Cinch::Storage I will deprecate this gem.
 
 ## Installation
 
