@@ -14,5 +14,11 @@ class CinchStorage
       YAML::dump(@data, file)
     end
   end
+
+  def synced_save(bot)
+    bot.synchronize(@filename) do
+      save
+    end
+  end
 end
 
