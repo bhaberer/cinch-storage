@@ -5,10 +5,10 @@ class CinchStorage
 
   attr_accessor :filename, :data
 
-  def initialize(file)
+  def initialize(file, init = Hash.new)
     @filename = file
     @data = YAML::load(File.open(@filename)) if File::exist?(@filename)
-    @data ||= Hash.new
+    @data ||= init
   end
 
   def save
