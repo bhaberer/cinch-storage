@@ -1,5 +1,7 @@
+require 'cinch/storage/version'
+require 'psych'
+
 class CinchStorage
-  require 'yaml'
 
   attr_accessor :filename, :data
 
@@ -15,7 +17,7 @@ class CinchStorage
     end
   end
 
-  def synced_save(bot)
+  def synced_save(bot = @bot)
     bot.synchronize(@filename) do
       save
     end

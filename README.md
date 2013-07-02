@@ -1,5 +1,11 @@
 # Cinch::Storage
 
+[![Gem Version](https://badge.fury.io/rb/cinch-storage.png)](http://badge.fury.io/rb/cinch-storage)
+[![Dependency Status](https://gemnasium.com/bhaberer/cinch-storage.png)](https://gemnasium.com/bhaberer/cinch-storage)
+[![Build Status](https://travis-ci.org/bhaberer/cinch-storage.png?branch=master)](https://travis-ci.org/bhaberer/cinch-storage)
+[![Coverage Status](https://coveralls.io/repos/bhaberer/cinch-storage/badge.png?branch=master)](https://coveralls.io/r/bhaberer/cinch-storage?branch=master)
+[![Code Climate](https://codeclimate.com/github/bhaberer/cinch-storage.png)](https://codeclimate.com/github/bhaberer/cinch-storage)
+
 Simple YAML backed Storage solution for Cinch plugins.
 
 Warning: Once Cinch's author finishes Cinch::Storage I will deprecate this gem.

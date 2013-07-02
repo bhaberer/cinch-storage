@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cinch-storage/version'
+require 'cinch/storage/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "cinch-storage"
@@ -17,5 +17,9 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency('psych', '1.3.4')
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'coveralls'
+
+  gem.add_dependency    'psych',        '~> 1.3.4'
 end
