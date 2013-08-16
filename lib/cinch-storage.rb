@@ -6,13 +6,13 @@ class CinchStorage
 
   def initialize(file, init = Hash.new)
     @filename = file
-    @data = YAML::load(File.open(@filename)) if File::exist?(@filename)
+    @data = Psych::load(File.open(@filename)) if File::exist?(@filename)
     @data ||= init
   end
 
   def save
     File.open(@filename, 'w') do |file|
-      YAML::dump(@data, file)
+      Psych::dump(@data, file)
     end
   end
 
