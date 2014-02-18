@@ -26,6 +26,10 @@ Or install it yourself as:
 
 ## Usage
 
+First, require it.
+
+    require 'cinch/storage'
+
 In your plugin you will need to spin up a Storage object as part of your init.
 
     def initialize(*args)
@@ -42,14 +46,10 @@ data collision.
       @storage.save
     end
 
-## This is Horrible Code!
+## Think this is terrible?
 
-The module is very fragile at the moment as a result of being written in like 20 minutes
-or something as a stopgap.
-
-However, since it doesn't look like Cinch::Storage will be happening very soon I will
-be going back through and adding tests and error handling and proper debugging and a
-little tighter integration with Cinch.
+I wouldn't disagree; this is my first time writing anyting remotely
+ORM-like. Please feel free to fork and submit pulls to increase sanity.
 
 ## Contributing
 
