@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Cinch::Storage::VERSION
   gem.authors       = ['Brian Haberer']
   gem.email         = ['bhaberer@gmail.com']
-  gem.description   = %q{Simle YAML backed Storage solution for Cinch plugins.}
-  gem.summary       = %q{Simle YAML backed Storage solution for Cinch plugins.}
+  gem.description   = %q{Simple YAML backed Storage solution for Cinch plugins.}
+  gem.summary       = %q{Data Storage for Cinch plugins.}
   gem.homepage      = 'https://github.com/bhaberer/cinch-storage'
   gem.license       = 'MIT'
 
