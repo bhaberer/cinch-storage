@@ -40,19 +40,17 @@ describe Cinch::Storage do
     storage.data << 'foo'
     storage.save
 
-    Cinch::Storage.new(@filename).data
-      .should include 'foo'
+    expect(Cinch::Storage.new(@filename).data)
+      .to include('foo')
   end
 
   it 'should handle multiple bot threads attempting to write to the same file' do
     10.times { |x| get_replies(make_message(@bot, "!store #{x}")) }
-    Cinch::Storage.new(@filename).data.length
-      .should == 10
+    expect(Cinch::Storage.new(@filename).data.length).to eq(10)
   end
 
   it 'should write object data to the disk' do
     get_replies(make_message(@bot, "!storething foobar"))
-    Cinch::Storage.new(@filename).data.first
-      .should == Thing.new('foobar')
+    expect(Cinch::Storage.new(@filename).data.first).to eq(Thing.new('foobar'))
   end
 end
