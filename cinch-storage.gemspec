@@ -17,10 +17,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(/^(test|spec|features)\//)
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'rake', '~> 0.9'
+  gem.add_development_dependency 'rake', '~> 12.3.3'
   gem.add_development_dependency 'rspec', '~> 3'
   gem.add_development_dependency 'coveralls', '~> 0.7'
-  gem.add_development_dependency 'cinch-test', '~> 0.0', '>= 0.0.2'
+  gem.add_development_dependency 'cinch-test', '~> 0.1', '>= 0.1.2'
 
   gem.add_dependency 'cinch', '~> 2', '>= 2.0.8'
   gem.add_dependency 'psych', '~> 2.0', '>= 2.0.4'
